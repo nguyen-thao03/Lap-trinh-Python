@@ -163,8 +163,8 @@ if __name__=="__main__":
     cbCnpm = Checkbutton(root, text="Công nghệ phần mềm", variable=var3,bg="light green").place(x=125, y =210)
     cbPTUDW = Checkbutton(root, text="Phát triển ứng dụng web", variable=var4,bg="light green").place(x=290, y =210)
     # tạo nút đăng ký và nút thoát, nút đăng ký lấy từ hàm submit
-    btnDangKy = Button(root, text="Đăng ký", font=("arial", 11, "bold"), bd=1, fg="black", bg="dark green", command=submit).place(x=150, y=260)
-    btnThoat =Button(root, text="Thoát",font=("arial",11, "bold"),bd=1, fg="black",bg="dark green",command=exit).place(x=330, y=260)
+    btnDangKy = Button(root, text="Đăng ký", font=("arial", 11, "bold"), bd=1, fg="white", bg="light grey", command=submit).place(x=150, y=260)
+    btnThoat =Button(root, text="Thoát",font=("arial",11, "bold"),bd=1, fg="white",bg="light grey",command=exit).place(x=330, y=260)
     # kiểm tra xem nhập đúng mã số sinh viên, email, số điện thoại, học kỳ, ngày sinh thông qua các hàm đã tạo trước đó
     mssv_field.bind("<FocusOut>", validate_mssv_input)
     email_field.bind("<FocusOut>", lambda e: validate_email_input())
